@@ -269,7 +269,7 @@ a:hover {
 }
 
 .voffset-lg {
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
 .row-no-gutters {
@@ -284,7 +284,12 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-  font-size: 32px;
+  font-size: 25px;
+  line-height: 4rem;
+}
+
+#bloc-1-hero h1 span {
+  font-size: 35px;
 }
 
 .navbar {
@@ -477,7 +482,7 @@ button {
 }
 
 .icon-md {
-  font-size: 30px !important;
+  font-size: 40px !important;
 }
 
 .icon-lg {
@@ -653,7 +658,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #464545 !important;
 }
 
 .container {
@@ -679,7 +684,21 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 14px;
+}
+
+.text-center-fullpage {
+  margin-bottom: 30px;
+  background-color: none;
+}
+
+.text-center-fullpage p {
+  font-size: 22px;
+}
+
+.text-center-quote {
+  font-size: 20px;
+  font-style: italic;
 }
 
 .tight-width-whitespace {
@@ -702,8 +721,18 @@ p {
 }
 
 .social {
-  max-width: 400px;
-  margin: auto auto auto auto;
+  max-width: 550px;
+  align-items: center;
+  margin: 20px auto 30px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.social .fa {
+  margin: 0 10px;
+}
+.social:hover {
+  color: #464545;
 }
 
 h2 {
@@ -777,16 +806,27 @@ h4 {
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: #fdb391 !important;
+}
+
+.text-shadow {
+  color: #f8a27a;
+  font-size: 27px;
+  text-shadow: 1px 1px 5px #464545;
+}
+
+.bg-text-shadow {
+  max-width: 600px;
+  margin: auto;
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
-  color: #ffffff !important;
+  background: #413b3b;
+  color: #f3976c !important;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
+  background: #ce7c56 !important;
   color: #ffffff !important;
 }
 
@@ -795,7 +835,8 @@ h4 {
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #f8a27a !important;
+  font-size: 20px;
 }
 
 .ltc-atomic-tangerine {
@@ -824,7 +865,7 @@ h4 {
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
