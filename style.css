@@ -832,11 +832,13 @@ h4 {
 
 .ltc-white {
   color: #ffffff !important;
+  padding: 8px;
 }
 
 .ltc-white:hover {
-  color: #f8a27a !important;
-  font-size: 20px;
+  color: #413b3b !important;
+  background-color: #f8a27a;
+  border-radius: 15px;
 }
 
 .ltc-atomic-tangerine {
