@@ -231,7 +231,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -447,7 +447,7 @@ nav .caret {
 
 .mg-lg {
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -466,7 +466,8 @@ nav .caret {
 }
 
 button {
-  outline: none !important;
+  outline: none;
+  background: none;
 }
 
 .btn-rd {
@@ -512,8 +513,14 @@ button {
 }
 
 .form-control {
-  border-color: rgba(0, 0, 0, 0.1);
+  /* border-color: rgba(0, 0, 0, 0.1); */
+  border: 2px solid #f3976c;
   box-shadow: none;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
 }
 
 .scrollToTop {
@@ -658,7 +665,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #464545 !important;
+  color: #333333 !important;
 }
 
 .container {
@@ -687,23 +694,36 @@ p {
   font-size: 14px;
 }
 
-.text-center-fullpage {
-  margin-bottom: 30px;
-  background-color: none;
+.tc-black {
+  color: #333333 !important;
 }
 
-.text-center-fullpage p {
-  font-size: 22px;
-}
-
-.text-center-quote {
+.text-bigger {
   font-size: 20px;
+}
+
+.text-italic {
   font-style: italic;
 }
 
 .tight-width-whitespace {
   max-width: 600px;
   margin: auto auto auto auto;
+  align-content: center;
+}
+
+ul,
+ul li {
+  font-size: 15px;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a:hover {
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 .h1 {
@@ -713,7 +733,6 @@ p {
 
 .cta-hero {
   margin-top: 22px;
-  color: #ffffff !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
   font-size: 16px;
@@ -721,18 +740,33 @@ p {
 }
 
 .social {
-  max-width: 550px;
+  width: 100px;
+  padding: 15px;
+  margin: auto;
   align-items: center;
-  margin: 20px auto 30px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social .fa {
-  margin: 0 10px;
+  margin: 10px;
+  color: inherit !important;
 }
+
 .social:hover {
-  color: #464545;
+  color: #fff !important;
+  background: #413b3b;
+  border-radius: 10px;
+}
+
+.contact h1,
+.contact p {
+  color: #f8d6c6 !important;
+}
+
+.media {
+  margin-top: 20px;
 }
 
 h2 {
@@ -805,19 +839,27 @@ h4 {
   background-color: #f3976c;
 }
 
+.tc-tangerine-light {
+  color: #ffb694 !important;
+}
+
 .tc-white {
-  color: #fdb391 !important;
+  color: #ffcdb6 !important;
 }
 
 .text-shadow {
   color: #f8a27a;
-  font-size: 27px;
-  text-shadow: 1px 1px 5px #464545;
+  font-size: 28px;
+  text-shadow: 1px 1px 5px #333333;
 }
 
 .bg-text-shadow {
   max-width: 600px;
   margin: auto;
+}
+
+.text-shadow-light {
+  text-shadow: 1px 1px 5px #f3976c;
 }
 
 .btn-atomic-tangerine {

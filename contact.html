@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Default">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -14,18 +14,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.jpg" />
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/blocs.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
+
     <title>La Chouette Agence - Contactez-nous</title>
 
     <!-- Analytics -->
@@ -36,14 +37,14 @@
     <!-- Principal conteneur -->
     <div class="page-container">
       <!-- bloc-0 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-0">
+      <header class="bloc bgc-white l-bloc" id="bloc-0">
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html"
                 ><img
                   src="img/la-chouette-agence.png"
-                  alt="atlanta web design logo"
+                  alt="Logo de la chouette agence, entreprise de web design à lyon"
                   height="40"
               /></a>
               <button
@@ -63,15 +64,11 @@
                 <li>
                   <a href="index.html">Accueil</a>
                 </li>
-                <li></li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
               </ul>
             </div>
           </nav>
         </div>
-      </div>
+      </header>
       <!-- bloc-0 END -->
 
       <!-- bloc-6 -->
@@ -80,12 +77,10 @@
         id="bloc-6"
       >
         <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1 class="text-center hero-bloc-text tc-white">
-                Parlons web design !
-              </h1>
-              <p class="text-center mg-lg tc-white tight-width-whitespace">
+          <div class="col-sm-12">
+            <div class="col-sm-12 text-shadow-light">
+              <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
+              <p class="col-sm-12 text-center mg-lg">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
@@ -99,63 +94,56 @@
 
       <!-- bloc-7 -->
       <div class="bloc bgc-white l-bloc" id="bloc-7">
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+        <div class="container bloc-sm">
+          <div class="text-center form">
+            <form
+              id="form_1"
+              novalidate
+              success-msg="Your message has been sent."
+              fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+            >
+              <div class="form-group">
+                <label> Nom </label>
+                <input id="name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label> Adresse email </label>
+                <input id="email" class="form-control" type="email" required />
+              </div>
+              <div class="form-group">
+                <label> Comment nous avez-vous connu ? </label>
+                <input
+                  class="form-control"
+                  type="email"
+                  required
+                  id="input_504"
+                />
+              </div>
+              <div class="form-group">
+                <label>
+                  Brief de votre projet (Ajoutez autant de détails que
+                  nécessaire)<br /> </label
+                ><textarea
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
+              <button
+                class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                type="submit"
               >
-                <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Adresse email </label>
-                  <input
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
-                </div>
-                <div class="form-group">
-                  <label>
-                    Brief de votre projet (Ajoutez autant de détails que
-                    nécessaire)<br /> </label
-                  ><textarea
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                  type="submit"
-                >
-                  Envoyer
-                </button>
-              </form>
-            </div>
-            <div class="col-sm-6">
-              <p>
-                contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
-              </p>
-            </div>
+                Envoyer
+              </button>
+            </form>
+          </div>
+          <div class="col-sm-12 text-left text-center media">
+            <p>
+              contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
+              de 9h à 18h, du lundi au vendredi<br />
+            </p>
           </div>
         </div>
       </div>
@@ -168,47 +156,70 @@
       <!-- ScrollToTop Button END-->
 
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p class="text-center white">
-                La chouette agence - Agence web basée à Lyon.<br />
+              <p class="text-center tc-black">
+                La chouette agence - Agence web basée à Lyon
               </p>
-              <div class="row row-no-gutters social">
+              <div class="tight-width-whitespace">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
-                    ></a>
+                    <a class="social tc-black" href="index.html"
+                      ><i class="fa fa-twitter icon-md"></i>Twitter</a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-facebook icon-md"></span
-                    ></a>
+                    <a class="social tc-black" href="index.html"
+                      ><span class="fa fa-facebook icon-md"></span>Facebook</a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-dribbble icon-md"></span
-                    ></a>
+                    <a class="social tc-black" href="index.html"
+                      ><span class="fa fa-dribbble icon-md"></span>Dribble</a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-instagram icon-md"></span
-                    ></a>
+                    <a class="social tc-black text-center" href="index.html"
+                      ><span class="fa fa-instagram icon-md"></span>Instagram</a
+                    >
                   </div>
+                </div>
+              </div>
+              <div class="row d-bloc">
+                <div class="col-sm-6 text-center">
+                  <h5 class="cta-hero">Partenaires</h5>
+                  <ul>
+                    <li><a href="voiture.com">voiture.com</a></li>
+                    <li><a href="pizza.com">pizza.com</a></li>
+                    <li><a href="matoiture.com">matoiture.com</a></li>
+                    <li><a href="immobilierseo.com">immobilierseo.com</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 text-center">
+                  <h5 class="cta-hero">Annuaires</h5>
+                  <ul>
+                    <li><a href="annuaireagence.com">annuaireagence.com</a></li>
+                    <li>
+                      <a href="annuairemarketing.com">annuairemarketing.com</a>
+                    </li>
+                    <li><a href="listeagence.com">listeagence.com</a></li>
+
+                    <li><a href="listeseo.com">listeseo.com</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->
