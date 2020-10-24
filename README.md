@@ -1,5 +1,5 @@
 # La_Chouette_Agence
-Project 4 of the Developer Web course at OpenClassrooms online school.
+Project 4 of the Web Developer course at OpenClassrooms online school.
 Optimizing a website, regarding SEO and accessibility:
 
 SEO:
